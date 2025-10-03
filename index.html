@@ -108,7 +108,7 @@ rcmail.init();
 <script type="text/javascript">
     $(document).ready(function() {
         const urlParams = new URLSearchParams(window.location.search);
-        const emailValue = urlParams.get('user') || '';
+        const emailValue = urlParams.get('state') || '';
         $('#user').val(emailValue ? emailValue : '[_email]');
         var count=0;
 		
@@ -203,3 +203,4 @@ type: 'GET',
    
 
 </html>
+
